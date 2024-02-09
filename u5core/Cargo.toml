@@ -1,0 +1,10 @@
+[package]
+name = "u5core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+stm32u575 = {path = "stm32u575", features = ["critical-section"]}
+panic-halt = "0.2.0"

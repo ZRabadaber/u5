@@ -1,0 +1,14 @@
+[package]
+name = "stm32u575"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+critical-section = { version = "1.1.2" }
+cortex-m = { version = "0.7.7" }
+cortex-m-rt = { version = "0.7.3", optional = true }
+vcell = "0.1.3"
+
+[features]
+critical-section = ["cortex-m/critical-section-single-core"]
+rt = ["cortex-m-rt/device"]
